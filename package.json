@@ -1,0 +1,31 @@
+{
+  "name": "cypresscucumber",
+  "version": "1.0.0",
+  "description": "Testes para estudo do cucumber utilizando o guerreiro cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ro8pereira/CypressCucumber.git"
+  },
+  "keywords": [
+    "Cypress",
+    "Cucumber"
+  ],
+  "author": "ro85pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ro8pereira/CypressCucumber/issues"
+  },
+  "homepage": "https://github.com/ro8pereira/CypressCucumber#readme",
+  "devDependencies": {
+    "cypress": "^13.14.2",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor":{
+    "nonGlobalStepDefinitions":true,
+    "stepDefinitions":"cypress/e2e/step_definitions"
+  }
+}
